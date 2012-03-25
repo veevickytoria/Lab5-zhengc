@@ -7,7 +7,9 @@ public class PrimeNumberGenerator {
 			return new ArrayList<Integer>();
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i = 2; i < n; i++){
-			ret.add(i);
+			ArrayList<Integer> primeFactors = PrimeFactorization.primeFactors(i);
+			if(primeFactors.get(primeFactors.size()-1) == i)
+				ret.add(i);
 		}
 		return ret;
 	}
