@@ -60,6 +60,10 @@ public class PrimeNumberGeneratorTest {
 		assertEquals(list(2, 3, 5, 7),PrimeNumberGenerator.generatePrimes(9));
 	}
 	
+	@Test
+	public void testEleven(){
+		assertEquals(list(2, 3, 5, 7),PrimeNumberGenerator.generatePrimes(11));
+	}
 	
 	private ArrayList<Integer> list(int... ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
