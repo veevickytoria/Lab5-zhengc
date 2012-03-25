@@ -9,4 +9,9 @@ public class PrimeFactorizationTest {
 	public void testOne(){
 		assertEquals(new ArrayList<Integer>(),PrimeFactorization.primeFactors(1));
 	}
+	
+	@Test
+	public void testTwo(){
+		
+	}
 }
