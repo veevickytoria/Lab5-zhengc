@@ -19,4 +19,17 @@ public class PrimeNumberGeneratorTest {
 	public void testOne(){
 		assertEquals(new ArrayList<Integer>(),PrimeNumberGenerator.generatePrimes(1));
 	}
+	
+	@Test
+	public void testTwo(){
+		assertEquals(list(2),PrimeNumberGenerator.generatePrimes(2));
+	}
+	
+	private ArrayList<Integer> list(int... ints){
+		ArrayList<Integer> ret = new ArrayList<Integer>();
+		for(int i : ints){
+			ret.add(i);
+		}
+		return ret;
+	}
 }
