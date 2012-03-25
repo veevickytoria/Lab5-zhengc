@@ -14,4 +14,9 @@ public class PrimeNumberGeneratorTest {
 	public void testZero(){
 		assertEquals(new ArrayList<Integer>(),PrimeNumberGenerator.generatePrimes(0));
 	}
+	
+	@Test
+	public void testOne(){
+		assertEquals(new ArrayList<Integer>(),PrimeNumberGenerator.generatePrimes(1));
+	}
 }
