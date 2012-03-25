@@ -22,12 +22,12 @@ public class PrimeNumberGeneratorTest {
 	
 	@Test
 	public void testTwo(){
-		assertEquals(list(2),PrimeNumberGenerator.generatePrimes(2));
+		assertEquals(new ArrayList<Integer>(),PrimeNumberGenerator.generatePrimes(2));
 	}
 	
 	@Test
 	public void testThree(){
-		assertEquals(list(2,3),PrimeNumberGenerator.generatePrimes(3));
+		assertEquals(list(2),PrimeNumberGenerator.generatePrimes(3));
 	}
 	
 	

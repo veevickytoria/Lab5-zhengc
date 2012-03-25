@@ -6,7 +6,9 @@ public class PrimeNumberGenerator {
 		if(n < 2)
 			return new ArrayList<Integer>();
 		ArrayList<Integer> ret = new ArrayList<Integer>();
-		ret.add(n);
+		for(int i = 2; i < n; i++){
+			ret.add(n);
+		}
 		return ret;
 	}
 }
