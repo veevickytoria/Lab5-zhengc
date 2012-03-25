@@ -9,4 +9,9 @@ public class PrimeNumberGeneratorTest {
 	public void testNegative(){
 		assertEquals(new ArrayList<Integer>(),PrimeNumberGenerator.generatePrimes(-4));
 	}
+	
+	@Test
+	public void testZero(){
+		assertEquals(new ArrayList<Integer>(),PrimeNumberGenerator.generatePrimes(0));
+	}
 }
