@@ -47,12 +47,12 @@ public class PrimeNumberGeneratorTest {
 	
 	@Test
 	public void testSeven(){
-		assertEquals(list(2, 3, 5),PrimeNumberGenerator.generatePrimes(6));
+		assertEquals(list(2, 3, 5),PrimeNumberGenerator.generatePrimes(7));
 	}
 	
 	@Test
 	public void testEight(){
-		assertEquals(list(2, 3, 5, 7),PrimeNumberGenerator.generatePrimes(6));
+		assertEquals(list(2, 3, 5, 7),PrimeNumberGenerator.generatePrimes(8));
 	}
 	
 	
