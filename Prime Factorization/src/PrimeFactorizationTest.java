@@ -35,6 +35,16 @@ public class PrimeFactorizationTest {
 		assertEquals(list(2,2,2),PrimeFactorization.primeFactors(8));
 	}
 	
+	@Test
+	public void testNine(){
+		assertEquals(list(3,3),PrimeFactorization.primeFactors(9));
+	}
+	
+	@Test
+	public void testBigNumber(){
+		assertEquals(list(5,7,7,1327),PrimeFactorization.primeFactors(325115));
+	}
+	
 	private ArrayList<Integer> list(int... ints){
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 		for(int i : ints){
